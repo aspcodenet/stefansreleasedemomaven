@@ -42,7 +42,7 @@ jobs:
         repo_token: "${{ secrets.GITHUB_TOKEN }}"
         automatic_release_tag: "latest"
         prerelease: false
-        title: "${{ env.build-number }}"
+        title: ${{ env.build-number }}
         files: |
           target/*.jar
           

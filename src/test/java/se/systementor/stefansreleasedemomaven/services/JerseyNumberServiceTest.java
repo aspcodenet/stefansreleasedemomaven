@@ -35,6 +35,6 @@ class JerseyNumberServiceTest {
         when(fakePlayerRepository.findAll()).thenReturn(List.of(Player.builder().jerseyNumber(9).build(),Player.builder().jerseyNumber(12).build()));
         boolean isTaken = sut.isJerseyTaken(11);
 
-        assertFalse(!isTaken);
+        assertFalse(isTaken);
     }
 }
